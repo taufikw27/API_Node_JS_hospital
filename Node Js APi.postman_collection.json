@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "8c7f5f96-0903-45ae-b29e-757850f3e7e2",
+		"name": "Node Js APi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post medicine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "price",
+							"value": "5000",
+							"type": "default"
+						},
+						{
+							"key": "quantity",
+							"value": "100",
+							"type": "default"
+						},
+						{
+							"key": "code",
+							"value": "ADFR45",
+							"type": "default"
+						},
+						{
+							"key": "merk",
+							"value": "Paramex",
+							"type": "default"
+						},
+						{
+							"key": "type",
+							"value": "tablet",
+							"type": "default"
+						},
+						{
+							"key": "expired",
+							"value": "2023-12-22",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/medicines/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"medicines",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update medicine",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "price",
+							"value": "5000",
+							"type": "default"
+						},
+						{
+							"key": "quantity",
+							"value": "1000000",
+							"type": "default"
+						},
+						{
+							"key": "code",
+							"value": "ADFR45",
+							"type": "default"
+						},
+						{
+							"key": "merk",
+							"value": "Paramex",
+							"type": "default"
+						},
+						{
+							"key": "type",
+							"value": "tablet",
+							"type": "default"
+						},
+						{
+							"key": "expired",
+							"value": "2023-12-22",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5001/api/medicines/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"medicines",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get medicine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/medicines/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"medicines",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete medicine",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/api/medicines/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"medicines",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
